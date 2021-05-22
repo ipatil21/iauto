@@ -1,0 +1,128 @@
+
+//const int abc(int a = 2);
+
+// Logics to add
+// 1. Function overloading
+// 2. void ; //Logic
+// 3. classname::function name
+// 4. structname
+// 5. enum
+// void g1(int = ([i]{ return i; })()); // error: captures something
+//int g(int x = f(a));
+
+//6. QString removeDataInsideParenthesis(QString curentLine = QString() );
+//7. QString removeDataInsideParenthesis(QString curentLine = QString("abc") );
+//8. QString removeDataInsideParenthesis(QString curentLine = "abc" );
+//9. QString removeDataInsideParenthesis(int, int);
+//10. QString removeDataInsideParenthesis(int, int) const;
+
+//121. void f(const int);
+//12. void f(const userdefineddatatypeClassname);
+
+/** Done **/
+// QString (const int i, const i);
+// QString (const static int i, int const i) const ;
+
+int a();
+
+
+//add null check logic...tell dev if null check is not done
+
+
+// Once commnt applied on func ignore that func
+
+dead code
+
+//                //addBriefInfo(allFileData, functionName, functionSyntax);
+
+//                addBriefInfo(allFileData, splitFun, curentLine);
+//                //qDebug()<<"all file Data after addBriefInfo:"<<allFileData;
+
+//                //addParamInfo(allFileData,splitFun,curentLine);
+//                ////qDebug()<<"all file Data after addParamInfo:"<<allFileData;
+
+////                addReturnTypeInfo(allFileData, splitFun, curentLine);
+////                //qDebug()<<"all file Data after addReturnTypeInfo:"<<allFileData;
+
+//                //qDebug()<<"How to avoid this";
+
+
+
+//Orginal Backup
+void AutoComment::applyComments(QString filePath)
+{
+    //QFile* pFile = new QFile("/home/indraneel/Documents/AutoCommen.cpp");
+    QFile* pFile = new QFile(filePath);
+
+    if(pFile->open(QFile::ReadWrite) || false)
+    {
+        ////qDebug()<<"File got opened";//
+        QString curentLine = pFile->readLine();
+        //qDebug()<<"Current line is "<<curentLine;
+        ////qDebug()<<"*******Read line one**********";
+        while (!pFile->atEnd())
+        {
+            ////qDebug()<<"*******Curr Line is not Null**********";
+            QString nextLine = pFile->readLine();
+            //check empty lines logic
+            curentLine = m_pHelper->toStdSyntax(curentLine);
+            nextLine = m_pHelper->toStdSyntax(nextLine);
+
+            bool isCurrLineFunc = m_pHelper->isCurrLineFunction(curentLine,nextLine);
+            if(true == isCurrLineFunc)
+            {
+                ////qDebug()<<"*******Curr Line is func**********";
+                QStringList splitFun = m_pHelper->formatString(curentLine);
+
+                if(splitFun.count() >= 2)
+                {
+                    m_pFuncInfo->set_className_and_returnType(curentLine);
+                    m_pFuncInfo->set_FunctionName(curentLine);
+
+                    QString functionReturnType = m_pFuncInfo->get_functionReturnType();
+                    m_pFuncInfo->set_isReturnPointer(functionReturnType);
+
+                    m_pFuncInfo->set_isFunctionConst(functionReturnType);
+                    m_pFuncInfo->set_isClassNamePresent(curentLine);
+                    m_pFuncInfo->set_isFunctionInline(curentLine);
+                    m_pFuncInfo->set_isFunctionPureVirtual(curentLine);
+                    m_pFuncInfo->set_isReturnConst(curentLine);
+                    m_pParamInfo->set_paramInfo(curentLine);
+
+                    //qDebug()<<"className :"<<m_pFuncInfo->get_className();
+                    //qDebug()<<"functionName :"<<m_pFuncInfo->get_functionName();
+                    //qDebug()<<"isClassNamePresent :"<<m_pFuncInfo->get_isClassNamePresent();
+                    //qDebug()<<"isFunctionInline :"<<m_pFuncInfo->get_isFunctionConst();
+                    //qDebug()<<"isFunctionInline :"<<m_pFuncInfo->get_isFunctionInline();
+                    //qDebug()<<"isFunctionPureVirtual :"<<m_pFuncInfo->get_isFunctionPureVirtual();
+                    //qDebug()<<"isReturnConst :"<<m_pFuncInfo->get_isReturnConst();
+                    //qDebug()<<"isReturnPointer :"<<m_pFuncInfo->get_isReturnPointer();
+                }
+            }
+            ////qDebug()<<"********curentLine = nextLine********";
+            curentLine = nextLine;
+            ////qDebug()<<"Current line is "<<curentLine;
+        }
+
+        //pFile->resize(0);
+        //pFile->flush();
+        //pFile->write("\n Indraneel");//writeData(allFileData);
+        pFile->close();
+        m_pHeaderInfo->close();
+    }
+}
+
+//    if(allFileData.indexOf(briefInfo) == -1)
+//    {
+//        //allFileData.insert(allFileData.indexOf(curentLine) - 1, briefInfo);
+//    }
+
+//            if(allFileData.indexOf(paramInfo) == -1)
+//            {
+//                allFileData.insert(allFileData.indexOf(curentLine) - 1,paramInfo);
+//            }
+
+//    if(allFileData.indexOf(returnTypeInfo) == -1)
+//    {
+//        allFileData.insert(allFileData.indexOf(curentLine) - 1,returnTypeInfo);
+//    }

@@ -1,0 +1,253 @@
+int main(int, char**) 
+MainScreen::MainScreen(QWidget*) 
+void MainScreen::on_runButton_clicked() 
+FileHandler::FileHandler() 
+AutoCommentHelper::AutoCommentHelper() 
+AutoComment::AutoComment() m_pFile : 0x2455620 m_pHelper : 0x244c3f0 m_pHeaderInfo : QFile(0x244c410) 
+void AutoComment::applyComments() 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    // asdgsdgv" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    " 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)    " : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index);" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList* formatString(QString fun, QString index);" 
+functionSyntax : "QStringList* formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList* formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ static /* */ QStringList formatString(QString fun, QString index);// ABC" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC // */ static /* */ QStringList formatString(QString fun, QString index);// ABC  /*" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+void MainScreen::on_runButton_clicked() 
+FileHandler::FileHandler() 
+AutoCommentHelper::AutoCommentHelper() 
+AutoComment::AutoComment() m_pFile : 0x2418a30 m_pHelper : 0x2452dc0 m_pHeaderInfo : QFile(0x2452de0) 
+void AutoComment::applyComments() 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    // asdgsdgv" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    " 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)    " : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index);" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList* formatString(QString fun, QString index);" 
+functionSyntax : "QStringList* formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList* formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ static /* */ QStringList formatString(QString fun, QString index);// ABC" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC // */ static /* */ QStringList formatString(QString fun, QString index);// ABC  /*" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+void MainScreen::on_runButton_clicked() 
+FileHandler::FileHandler() 
+AutoCommentHelper::AutoCommentHelper() 
+AutoComment::AutoComment() m_pFile : 0x2452e00 m_pHelper : 0x242c2f0 m_pHeaderInfo : QFile(0x242c310) 
+void AutoComment::applyComments() 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    // asdgsdgv" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    " 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)    " : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index);" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList* formatString(QString fun, QString index);" 
+functionSyntax : "QStringList* formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList* formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ static /* */ QStringList formatString(QString fun, QString index);// ABC" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC // */ static /* */ QStringList formatString(QString fun, QString index);// ABC  /*" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+void MainScreen::on_runButton_clicked() 
+FileHandler::FileHandler() 
+AutoCommentHelper::AutoCommentHelper() 
+AutoComment::AutoComment() m_pFile : 0x242c330 m_pHelper : 0x244c330 m_pHeaderInfo : QFile(0x243f480) 
+void AutoComment::applyComments() 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    // asdgsdgv" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    " 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)    " : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index);" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList* formatString(QString fun, QString index);" 
+functionSyntax : "QStringList* formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList* formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ static /* */ QStringList formatString(QString fun, QString index);// ABC" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC // */ static /* */ QStringList formatString(QString fun, QString index);// ABC  /*" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+void MainScreen::on_runButton_clicked() 
+FileHandler::FileHandler() 
+AutoCommentHelper::AutoCommentHelper() 
+AutoComment::AutoComment() m_pFile : 0x24104b0 m_pHelper : 0x244a660 m_pHeaderInfo : QFile(0x243e640) 
+void AutoComment::applyComments() 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    // asdgsdgv" 
+functionSyntax : "QStringList AutoCommentHelper::formatString(QString fun, QString index)    " 
+returnType : "" : 
+functionName : ":formatString(QString fun, QString index)    " : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList formatString(QString fun, QString index);" 
+functionSyntax : "QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : "QStringList* formatString(QString fun, QString index);" 
+functionSyntax : "QStringList* formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "QStringList* formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ QStringList formatString(QString fun, QString index);" 
+functionSyntax : "  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC */ static /* */ QStringList formatString(QString fun, QString index);// ABC" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+functionSyntax : " /* asdfasdgfa // ABC // */ static /* */ QStringList formatString(QString fun, QString index);// ABC  /*" 
+functionSyntax : "  static  QStringList formatString(QString fun, QString index)" 
+returnType : "" : 
+functionName : "  static  QStringList formatString(QString fun, QString index)" : 
+paramList : () : 
+void MainScreen::on_cancelButton_clicked() 

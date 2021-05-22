@@ -1,0 +1,139 @@
+#include "FunctionInfo.h"
+
+FunctionInfo::FunctionInfo():
+    m_isFunctionInline(false),
+    m_isFunctionConst(false),
+    m_isFunctionVirtual(false),
+    m_isFunctionPureVirtual(false),
+    m_isClassNamePresent(false),
+    m_isReturnConst(false),
+    m_isReturnReference(false),
+    m_isReturnPointer(false),
+    m_returnDataType(""),
+    m_className(""),
+    m_functionName("")
+{
+
+}
+
+QString FunctionInfo::get_className()
+{
+    return m_className;
+}
+
+QString FunctionInfo::get_functionName()
+{
+    return m_functionName;
+}
+
+QString FunctionInfo::get_functionReturnType()
+{
+    return m_returnDataType;
+}
+
+bool FunctionInfo::get_isFunctionInline()
+{
+    return m_isFunctionInline;
+}
+
+bool FunctionInfo::get_isFunctionConst()
+{
+    return m_isFunctionConst;
+}
+
+bool FunctionInfo::get_isFunctionPureVirtual()
+{
+    return m_isFunctionPureVirtual;
+}
+
+bool FunctionInfo::get_isClassNamePresent()
+{
+    return m_isClassNamePresent;
+}
+
+bool FunctionInfo::get_isReturnConst()
+{
+    return m_isReturnConst;
+}
+
+bool FunctionInfo::get_isReturnPointer()
+{
+    return m_isReturnPointer;
+}
+
+void FunctionInfo::set_isFunctionInline(QString functionSyntax)
+{
+    m_isFunctionInline = functionSyntax.contains("inline ") ? true : false;
+}
+
+void FunctionInfo::set_isFunctionConst(QString functionSyntax)
+{
+    if(functionSyntax.contains(')'))
+    {
+        QStringList checkConstString = functionSyntax.split(" ");
+        QString xyz;
+
+        for(int cL = 0; cL < checkConstString.count(); cL++)
+        {
+            if(checkConstString.at(cL) != " ")
+            {
+                xyz = xyz + checkConstString.at(cL);
+            }
+        }
+        m_isFunctionConst = xyz.contains("const;") ? true : xyz.contains("const{") ? true : false ;
+    }
+}
+
+void FunctionInfo::set_FunctionName(QString functionSyntax)
+{
+    if(functionSyntax.contains('(') && functionSyntax.contains(')'))
+    {
+        QStringList splittedString = functionSyntax.split('(');
+        QString functionName = splittedString.at(0);
+        QStringList removeSpaces = functionName.split(" ");
+        int splitCount = removeSpaces.count();
+        functionName  = removeSpaces.at(splitCount - 1);
+
+        if(functionName.contains("::"))
+        {
+            m_functionName = functionName.split("::").at(1);
+        }
+    }
+}
+
+void FunctionInfo::set_isFunctionPureVirtual(QString functionSyntax)
+{
+   m_isFunctionPureVirtual = functionSyntax.contains(") = 0") ? true :
+                             functionSyntax.contains(") =0")  ? true :
+                             functionSyntax.contains(")= 0")  ? true :
+                             functionSyntax.contains(")=0")   ? true : false ;
+}
+
+void FunctionInfo::set_isClassNamePresent(QString functionSyntax)
+{
+   m_isClassNamePresent = functionSyntax.contains("::") ? true : false;
+}
+
+void FunctionInfo::set_isReturnConst(QString functionSyntax)
+{
+//    m_isReturnConst = m_returnDataType ? contains("const") ? true : false;
+}
+
+void FunctionInfo::set_isReturnPointer(QString functionSyntax)
+{
+//    m_isReturnPointer = m_returnDataType ? contains("*") ? true : false;
+}
+
+void FunctionInfo::set_className_and_returnType(QString functionSyntax)
+{
+    if(functionSyntax.contains("::"))
+    {
+        QStringList splittedString  = functionSyntax.split("::");
+        m_className  = splittedString.at(0);
+        QStringList removeSpaces = m_className.split(" ");
+        int splitCount = removeSpaces.count();
+
+        m_className = removeSpaces.at(splitCount - 1);
+        m_returnDataType = removeSpaces.at(splitCount - 2);
+    }
+}

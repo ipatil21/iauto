@@ -1,0 +1,42 @@
+#ifndef PARAMINFO_H
+#define PARAMINFO_H
+#include <QString>
+#include <QStringList>
+
+class ParamInfo
+{
+public:
+    ParamInfo();
+
+    struct SParamInfo
+    {
+        bool m_isParamStatic;
+        bool m_isParamConst;
+        bool m_isParamReference;
+        bool m_isParamPointer;
+        bool m_isParamDefault;
+        QString m_paramDataType;
+        QString m_ParamObjectName;
+        QString m_paramDefaultValue;
+    };
+
+    void clear_paramInfoList();
+    void set_paramInfo(QString functionSyntax);
+    bool isParamConst(QString paramReturnType);
+    bool isParamStatic(QString paramReturnType);
+    bool isParamPointer(QString paramReturnType);
+    bool isParamDefault(QString paramReturnType);
+    bool isParamReference(QString paramReturnType);
+    QList<ParamInfo::SParamInfo> get_paramInfoList();
+    QString handleSpecialCharCase(QString paramListElement);
+    QStringList getDataInsideParenthesis(QString functionSyntax);
+    QStringList splitParamListByWhiteSpaces(QString paramListElement);
+    QString getElementFromParamList(QStringList paramList, int index);
+    QString spaceAfterSpecialChar(QString paramListElement, int indexOfSpecialChar);
+    QString spaceBeforeSpecialChar(QString paramListElement, int indexOfSpecialChar);
+    QString spaceAfterBeforeSpecialChar(QString paramListElement, int indexOfSpecialChar);
+
+    QList<SParamInfo> ParamInfoList;   
+};
+
+#endif // PARAMINFO_H
